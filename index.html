@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <input type="text" id="value1"><br>
-    <input type="text" id="value2"><br>
 
-    <p id="display"></p>
+<div class="calculator">
 
-    <button onclick="add()">Addition</button>
-    <button onclick="sub()">Subtract</button>
-    <button onclick="multi()">Multiply</button>
-    <button onclick="divi()">Division</button>
-    <button onclick="modulus()">Modulus</button>
-    <button onclick="power()">Power</button>
+  <div id="display" class="screen">Result will appear here</div>
 
-    <script src="script.js"></script>
-</body>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+
+  <div class="buttons">
+    <button onclick="add(event)">+</button>
+    <button onclick="sub(event)">-</button>
+    <button onclick="multi(event)">*</button>
+    <button onclick="divi(event)">/</button>
+    <button onclick="modulus(event)">%</button>
+    <button onclick="power(event)">^</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body> 
 </html>
